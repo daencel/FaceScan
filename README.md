@@ -9,13 +9,29 @@
 FaceScan is a Python script which can detect Face Masks in webcams, images or video files and streams
 </p>
 
+Table of Contents
+=================
+
+   * [Face Scan](#face-scan)
+      * [Demo](#-demo)
+            * [Webcam](#-webcam)
+            * [Files](#-files)
+            * [Online Streams](#-online-streams)
+            * [Use with GUI Interface](#use-with-gui-interface)
+      * [Installation](#️-installation)
+      * [Usage](#-usage)
+      * [Models](#-models)
+      * [Code Contributors](#-code-contributors)
+      * [License](#-license)
+
+
 ## ✨ Demo
 #### 📹 Webcam
-`FaceScan` is able to detect Face Masks in video feed from connected webcams in realtime:
+FaceScan is able to detect face masks in video feed from connected webcams in realtime:
 
 
 #### 📁 Files
-`FaceScan` is able to detect Face Masks locally saved video and images files:
+FaceScan is able to detect face masks from locally saved video and image files:
 
 <table style="width:100%">
     <tr>
@@ -33,10 +49,10 @@ FaceScan is a Python script which can detect Face Masks in webcams, images or vi
 </table>
 
 #### 📲 Online Streams
-`FaceScan` is able to detect Face Masks in online streams such as rtsp, rtmp and http.
+FaceScan is able to detect face masks from online streams such as rtsp, rtmp and http.
 
 #### Use with GUI Interface
-`FaceScan` also comes with a <a href="https://github.com/DanielLechner/FaceScan/blob/main/app/layout.py">GUI</a> which functions the same way as the python command, just with an easier interface.
+FaceScan also comes with a <a href="https://github.com/DanielLechner/FaceScan/blob/main/app/layout.py">GUI</a> which functions the same way as the python command, just with an easier interface.
 
 <img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/interface.png">
 
