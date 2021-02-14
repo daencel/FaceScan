@@ -39,12 +39,16 @@ FaceScan is able to detect face masks from locally saved video and image files:
       <td><p>After</p></td>
     </tr>
     <tr>
-        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/before_images/7.jpg"></td>
-        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/after_images/7.jpg"></td>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/before_images/0.jpg"></td>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/after_images/0.jpg"></td>
     </tr>
   <tr>
-        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/before_images/12.jpg"></td>
-        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/after_images/12.jpg"></td>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/before_images/1.jpg"></td>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/after_images/1.jpg"></td>
+    </tr>
+    <tr>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/before_images/2.jpg"></td>
+        <td><img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/after_images/2.jpg"></td>
     </tr>
 </table>
 
