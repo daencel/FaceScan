@@ -28,7 +28,7 @@ FaceScan is a Python script which can detect Face Masks in webcams, images or vi
 ## ✨ Demo
 #### 📹 Webcam
 FaceScan is able to detect face masks in video feed from connected webcams in realtime:
-
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/webcam.gif">
 
 #### 📁 Files
 FaceScan is able to detect face masks from locally saved video and image files:
