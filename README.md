@@ -10,8 +10,7 @@
 FaceScan is a Python script which can detect face masks in webcams, images or video files and streams
 </p>
 
-📖 Table of Contents
-=================
+## 📖 Table of Contents
 
 * [Face Scan](#face-scan)
   * [Demo](#-demo)
