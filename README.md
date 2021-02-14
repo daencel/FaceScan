@@ -70,10 +70,30 @@ $ python detect.py --source 0  # webcam
 
 ```
 
+With the parser tag ``` --weights ``` you can use a custom weight file
+
+## 🧠 Models
+
+We decided to use the yolov5s model, since it is the fastes. This is important since live feed has to be computet very fast to have no lag.
+
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/yolov5_models.png" width="1000">
+
+Our weights file has a high precision as you can see in this graph, which represents the confidence the trained model has gained over time. This is tested with the "test" Dataset. 
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/confidence-curve.png">
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/classes.jpg">
+
+
+
 ## 👨🏾‍💻👨🏻‍💻 Code Contributors
 
+<a href="https://github.com/DanielLechner/FaceScan/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DanielLechner/FaceScan" />
+</a>
 
 ## ✍🏾 Authors
 
+<a href="https://github.com/DanielLechner/FaceScan/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=DanielLechner/FaceScan" />
+</a>
 
 ## 📝 License
