@@ -3,10 +3,11 @@
   <a href="https://github.com/DanielLechner/FaceScan/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/DanielLechner/FaceScan"></a>
-  <a href="https://github.com/DanielLechner/FaceScan/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/DanielLechner/FaceScan"></a>
+  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/DanielLechner/FaceScan">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DanielLechner/FaceScan">
 </p>
 <p align="center">
-FaceScan is a Python script which can detect Face Masks in webcams, images or video files and streams
+FaceScan is a Python script which can detect face masks in webcams, images or video files and streams
 </p>
 
 📖 Table of Contents
