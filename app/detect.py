@@ -55,7 +55,9 @@ def detect(save_img=False):
     # Get names and colors
     names = model.module.names if hasattr(model, 'module') else model.names
     colors = [[random.randint(0, 255) for _ in range(3)] for _ in names]
-
+    colors[1] = [0, 0, 255]
+    colors[0] = [0, 255, 0]
+    
     # Run inference
     if device.type != 'cpu':
         model(torch.zeros(1, 3, imgsz, imgsz).to(device).type_as(next(model.parameters())))  # run once
