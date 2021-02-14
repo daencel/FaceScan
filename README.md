@@ -111,6 +111,8 @@ Furthermore you can use the following parser tags:
 We decided to use the yolov5s model, since it is the fastes. This is important since live feed has to be computet very fast to have no lag.
 
 <img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/yolov5_models.png" width="1000">
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/models.png" width="1000">
+
 
 Our weights file has a high precision as you can see in this graph, which represents the confidence the trained model has gained over time. This is tested with the "test" Dataset. 
 <img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/confidence-curve.png">
