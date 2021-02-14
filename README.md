@@ -70,6 +70,8 @@ $ python detect.py --source 0  # webcam
 
 ```
 
+All outputs are saved in ``` FaceScan/app/runs/detect```
+
 With the parser tag ``` --weights ``` you can use a custom weight file
 
 ## 🧠 Models
@@ -86,14 +88,7 @@ Our weights file has a high precision as you can see in this graph, which repres
 
 ## 👨🏾‍💻👨🏻‍💻 Code Contributors
 
-<a href="https://github.com/DanielLechner/FaceScan/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DanielLechner/FaceScan" />
-</a>
-
-## ✍🏾 Authors
-
-<a href="https://github.com/DanielLechner/FaceScan/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=DanielLechner/FaceScan" />
-</a>
 
 ## 📝 License
+
+To check out more about our License click <a href="https://github.com/DanielLechner/FaceScan/blob/main/LICENSE">here</a>
