@@ -3,7 +3,7 @@
   <a href="https://github.com/DanielLechner/FaceScan/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/DanielLechner/FaceScan"></a>
-  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/DanielLechner/FaceScan">
+  <a href="https://github.com/DanielLechner/FaceScan/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/DanielLechner/FaceScan"></a>
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DanielLechner/FaceScan">
 </p>
 <p align="center">
