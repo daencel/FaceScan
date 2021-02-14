@@ -17,7 +17,7 @@ FaceScan is a Python script which can detect Face Masks in webcams, images or vi
     * [Webcam](#-webcam)
     * [Files](#-files)
     * [Online Streams](#-online-streams)
-    * [Use with GUI Interface](#use-with-gui-interface)
+    * [Use with GUI Interface](#-use-with-gui-interface)
   * [Installation](#️-installation)
   * [Usage](#-usage)
   * [Models](#-models)
@@ -93,7 +93,14 @@ $ python detect.py --source 0  # webcam
 
 All outputs are saved in ``` FaceScan/app/runs/detect```
 
-With the parser tag ``` --weights ``` you can use a custom weight file
+Furthermore you can use the following parser tags:
+```
+--weights: weights of the trained model
+--source: input file/folder to run inference on, 0 for webcam
+--output: directory to save results
+--iou-thres: IOU threshold for NMS, defaults to 0.45
+--conf-thres: object confidence threshold
+```
 
 ## 🧠 Models
 
