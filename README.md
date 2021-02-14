@@ -35,7 +35,12 @@ FaceScan is a Python script which can detect Face Masks in webcams, images or vi
 #### 📲 Online Streams
 `FaceScan` is able to detect Face Masks in online streams such as rtsp, rtmp and http.
 
-## ⚙️ Intallation
+#### Use with GUI Interface
+`FaceScan` also comes with a GUI which functions the same way as the python command, just with an easier interface.
+
+<img src="https://github.com/DanielLechner/FaceScan/blob/main/readme/interface.png">
+
+## ⚙️ Installation
 
 Clone git repo locally
 ```bash

@@ -13,21 +13,20 @@ import os
 def clickedCam():
     cwd = os.getcwd()
     tresh = ui.horizontalSlider.value()/100
-    print("python detect.py --source 0 --weights best.pt --conf-thres " + tresh)
-    #os.system("python detect.py --source 0 --weights best.pt --conf-thres " + tresh)
+    print("python detect.py --source 0 --weights best.pt --conf-thres " + str(tresh))
 
 def clickedPath():
     cwd = os.getcwd()
     filepath = ui.lineEdit.text()
     tresh = ui.horizontalSlider.value()/100
-    print("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + tresh)
+    print("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + str(tresh))
     #os.system("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + tresh)
 
 def clickedStream():
     cwd = os.getcwd()
     ppath = ui.lineEdit_2.text()
     tresh = ui.horizontalSlider.value()/100
-    print("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + tresh)
+    print("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + str(tresh))
     #os.system("python detect.py --source " + ppath + " --weights best.pt --conf-thres " + tresh)
 
 class Ui_Dialog(object):
