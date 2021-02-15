@@ -7,7 +7,7 @@
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DanielLechner/FaceScan">
 </p>
 <p align="center">
-FaceScan is a Python script which can detect face masks in webcams, images or video files and streams
+FaceScan is a Python program which can detect face masks in webcams, images or video files and streams
 </p>
 
 ## 📖 Table of Contents
@@ -62,17 +62,17 @@ FaceScan also comes with a <a href="https://github.com/DanielLechner/FaceScan/bl
 
 ## ⚙️ Installation
 
-Clone git repo locally
+Clone the [git repo](https://github.com/DanielLechner/FaceScans)
 ```bash
 $ git clone https://github.com/DanielLechner/FaceScan
 ```
 
-Change directory to FaceScan/app
+Change directory to [FaceScan/app](https://github.com/DanielLechner/FaceScan/tree/main/app)
 ```bash
 $ cd FaceScan/app
 ```
 
-Intstall all dependencies from [requirements.txt](https://github.com/DanielLechner/FaceScan/blob/main/app/requirements.txt)
+Intstall all dependencies from [requirements.txt](https://github.com/DanielLechner/FaceScan/blob/main/app/requirements.txt). We reccomend using Python 3.8.5.
 ```bash
 $ pip install -r requirements.txt
 ```
