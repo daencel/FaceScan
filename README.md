@@ -71,7 +71,8 @@ Change directory to [FaceScan/app](https://github.com/DanielLechner/FaceScan/tre
 ```bash
 $ cd FaceScan/app
 ```
-!!!If you are using Windows, then go into your Anaconda (https://docs.conda.io/projects/conda/en/latest/index.html) environment and install torchvision with this command
+!!!
+If you are using Windows, then go into your Anaconda (https://docs.conda.io/projects/conda/en/latest/index.html) environment and install torchvision with this command
 ```bash
 $ conda install pytorch torchvision cpuonly -c pytorch-nightly -c defaults -c conda-forge
 ```
