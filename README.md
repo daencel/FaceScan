@@ -62,7 +62,7 @@ FaceScan also comes with a <a href="https://github.com/DanielLechner/FaceScan/bl
 
 ## ⚙️ Installation
 
-Clone the [git repo](https://github.com/DanielLechner/FaceScans)
+Clone the [git repo](https://github.com/DanielLechner/FaceScan)
 ```bash
 $ git clone https://github.com/DanielLechner/FaceScan
 ```
