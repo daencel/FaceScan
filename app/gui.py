@@ -11,8 +11,8 @@ root.iconbitmap("pictures/hnet.com-image.ico")
 root.configure(background='white')
 root.resizable(False,False)
 # put root in the middle
-root_width = 675
-root_height = 450
+root_width = root.winfo_screenwidth()//2
+root_height = root.winfo_screenheight()//2
 screen_width =root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
 x = int((screen_width/2) - (root_width/2))
