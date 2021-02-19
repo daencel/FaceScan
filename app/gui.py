@@ -38,7 +38,7 @@ def setthreshold() :
     formatted_sliderval = "{:.1f}".format(sliderval)
     return formatted_sliderval
 
-slider = Scale(framethres, from_= 0, to = 10, resolution = 0.1, orient=HORIZONTAL,bg = 'white',length=395)
+slider = Scale(framethres, from_= 0, to = 1, resolution = 0.1, orient=HORIZONTAL,bg = 'white',length=395)
 slider.set(0.4)
 slider.grid(row=1, column = 1, padx = 20)
 
