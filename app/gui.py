@@ -29,8 +29,7 @@ labelbg = Label(frametop, image=img, bg='white')
 labelbg.pack()
 
 # create Frame for Threshold
-#(.....)
-framethres = Frame(root,padx=10,pady = 10, bg = 'white',highlightbackground = 'gray' , highlightthickness=1)
+framethres = Frame(root,padx=20,pady = 10, bg = 'white',highlightbackground = 'gray' , highlightthickness=1)
 framethres.pack()
 
 
@@ -41,28 +40,25 @@ def setthreshold() :
 
 slider = Scale(framethres, from_= 0, to = 10, resolution = 0.1, orient=HORIZONTAL,bg = 'white',length=395)
 slider.set(0.4)
-slider.grid(row=1, column = 1)
-thrlabel = Label(framethres, text="                                ",bg = 'white')
-thrlabel.grid (row =1 , column =2)
+slider.grid(row=1, column = 1, padx = 20)
+
 
 button_source = Button(framethres, text="Set Threshold",padx=29, pady=0 ,command =setthreshold, bg= 'white')
-button_source.grid(row=1, column =7)
+button_source.grid(row=1, column =7, padx = 20)
 
 # create Frame to set source
-framemiddle = Frame(root,padx=10,pady = 15, bg = 'white',highlightbackground = 'gray' , highlightthickness=1)
+framemiddle = Frame(root,padx=20,pady = 15, bg = 'white',highlightbackground = 'gray' , highlightthickness=1)
 framemiddle.pack()
 labelsource = Label(framemiddle, text="Choose a Camera as Output",bg = 'white')
-labelsource.grid (row =2 , column =1)
+labelsource.grid (row =2 , column =1, padx = 25)
 labelsource.config()
-labelsource2 = Label(framemiddle, text="                       ",bg = 'white')
-labelsource2.grid (row =2 , column =2)
+
 inputtext = StringVar(value="0")
 # radiobuttons to make camera selection
 Radiobutton(framemiddle, text="Webcam", variable = inputtext, value = 0,bg = 'white').grid(row=2 , column = 3)
 Radiobutton(framemiddle, text="Camera 1", variable = inputtext, value = 1,bg = 'white').grid(row=2 , column = 4)
 Radiobutton(framemiddle, text="Camera 2", variable = inputtext, value = 2,bg = 'white').grid(row=2 , column = 5)
-labelsource3 = Label(framemiddle, text="                 ",bg = 'white')
-labelsource3.grid (row =2 , column =6)
+
 
 
 def setsource(args):
@@ -70,7 +66,7 @@ def setsource(args):
 
 
 button_source = Button(framemiddle, text="Set Source",padx=30, pady=0, command=lambda : setsource(inputtext.get()),bg = 'white')
-button_source.grid(row=2, column =7)
+button_source.grid(row=2, column =7, padx = 30)
 
 
 # create Frame to set path to directory or file
@@ -90,9 +86,9 @@ def browse():
     input_path.insert(0,filename)
     return filename
 
-button_browse = Button(framecenter, text="Browse",padx=22,pady=0, command = lambda: browse(),bg = 'white').grid(row=3, column = 5)
+button_browse = Button(framecenter, text="Browse",padx=21,pady=0, command = lambda: browse(),bg = 'white').grid(row=3, column = 5)
 
-#******************************
+# function to set directory into command line
 def setpath():
     if not input_path.get():
         input_path.insert(0,"Please insert path!")
@@ -120,7 +116,7 @@ def browsestream():
     input_stream.insert(0,filename)
     return filename
 
-button_browse2 = Button(framebottom, text="Browse",padx=22,pady=0, command = lambda: browsestream(),bg = 'white').grid(row=4, column = 5)
+button_browse2 = Button(framebottom, text="Browse",padx=21,pady=0, command = lambda: browsestream(),bg = 'white').grid(row=4, column = 5)
 def setstream():
     if not input_stream.get():
         input_stream.insert(0, "Please insert stream!")
