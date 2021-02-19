@@ -91,7 +91,7 @@ button_browse = Button(framecenter, text="Browse",padx=21,pady=0, command = lamb
 # function to set directory into command line
 def setpath():
     if not input_path.get():
-        input_path.insert(0,"Please insert path!")
+        messagebox.showwarning("Error", "Please insert Path!")
     else:
         os.system("python detect.py --source " + input_path.get() + " --weights best.pt --conf-thres " + setthreshold())
         input_path.delete(0, 'end')
@@ -119,7 +119,7 @@ def browsestream():
 button_browse2 = Button(framebottom, text="Browse",padx=21,pady=0, command = lambda: browsestream(),bg = 'white').grid(row=4, column = 5)
 def setstream():
     if not input_stream.get():
-        input_stream.insert(0, "Please insert stream!")
+        messagebox.showwarning("Error", "Please insert Stream!")
     else:
         os.system("python detect.py --source " + input_stream.get() + " --weights best.pt --conf-thres " + setthreshold() + "\n")
         input_stream.delete(0,'end')
