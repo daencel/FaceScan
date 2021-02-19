@@ -119,7 +119,7 @@ def detect(save_img=False):
 
             # Stream results
             if view_img:
-                cv2.imshow(str(p), im0)
+                cv2.imshow("FaceScan", im0)
                 cv2.waitKey(1) # 1 millisecond
 
             # Save results (image with detections)
@@ -131,6 +131,7 @@ def detect(save_img=False):
                         vid_path = save_path
                         if isinstance(vid_writer, cv2.VideoWriter):
                             vid_writer.release()  # release previous video writer
+
 
                         fourcc = 'mp4v'  # output video codec
                         fps = vid_cap.get(cv2.CAP_PROP_FPS)
