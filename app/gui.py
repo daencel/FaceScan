@@ -125,10 +125,12 @@ def browsestream():
     input_stream.insert(0,filename)
     return filename
 
+cleartext = StringVar()
+cleartext.set("Select of Paste Stream")  
 
-input_stream = Entry(framebottom, width = 58, borderwidth= 3,fg='#8F9193')
+input_stream = Entry(framebottom, width = 58, borderwidth= 3,fg='#8F9193',text = cleartext)
 input_stream.grid(row=4, column=2)
-input_stream.insert(0, "Select or Paste Path")
+
 
 
 button_browse2 = Button(framebottom, text="Browse",padx=21,pady=0, command = lambda: browsestream(),bg = '#5F6368', fg='white',activebackground = '#464B51').grid(row=4, column = 5)
