@@ -139,7 +139,7 @@ labelpath.grid(row=3, column=1, pady=30)
 labelpath['font'] = font
 cleartext = StringVar()
 cleartext.set("Select of Paste Path")
-input_path = ttk.Entry(framecenter, width=58, text=cleartext)
+input_path = ttk.Entry(framecenter, width=45, text=cleartext)
 input_path.grid(row=3, column=2)
 input_path.bind("<Button-1>", clearpath)
 
@@ -157,7 +157,7 @@ labelstream['font'] = font
 
 cleartext2 = StringVar()
 cleartext2.set("Select of Paste Stream")
-input_stream = ttk.Entry(framebottom, width=58, text=cleartext2)
+input_stream = ttk.Entry(framebottom, width=45, text=cleartext2)
 input_stream.grid(row=4, column=2)
 
 input_stream.bind("<Button-1>", clearpath)
