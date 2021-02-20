@@ -1,4 +1,7 @@
-<h1 align="center">Face Scan</h1>
+<h1 align="center">
+  <img alt="GitHub repo size" src="https://github.com/DanielLechner/FaceScan/blob/main/app/pictures/logo1.png">
+</h1>
+
 <p align="center">
   <a href="https://github.com/DanielLechner/FaceScan/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/DanielLechner/FaceScan"></a>
