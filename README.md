@@ -8,7 +8,9 @@
   <a href="https://github.com/DanielLechner/FaceScan/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/DanielLechner/FaceScan"></a>
   <a href="https://github.com/DanielLechner/FaceScan/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/DanielLechner/FaceScan"></a>
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DanielLechner/FaceScan">
+    <img alt="GitHub repo size" src="https://komarev.com/ghpvc/?username=DanielLechner&label=Repo+Views">
 </p>
+
 <p align="center">
 FaceScan is a Python program which can detect face masks in webcams, images or video files and streams
 </p>
@@ -128,6 +130,9 @@ Our weights file has a high precision as you can see in this graph, which repres
 
 
 ## 👨🏾‍💻👨🏻‍💻 Code Contributors
+
+![DanielLechner's GitHub stats](https://github-readme-stats.vercel.app/api?username=DanielLechner&show_icons=true&theme=radical) ![gabcode1712's GitHub stats](https://github-readme-stats.vercel.app/api?username=gabcode1712&show_icons=true&theme=radical)
+
 
 
 ## 📝 License
