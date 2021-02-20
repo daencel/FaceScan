@@ -34,7 +34,7 @@ frametop.pack()
 # create label on top of frame with logo
 img = PhotoImage(file="pictures/logo1.png")
 labelbg = ttk.Label(frametop, image=img)
-labelbg.pack(pady=10)
+labelbg.pack(pady=15)
 
 frameall = ttk.Frame(root)
 frameall.pack()
