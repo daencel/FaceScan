@@ -117,7 +117,7 @@ threshinfo['font'] = font
 framemiddle = ttk.Frame(frameall)
 framemiddle.pack()
 labelsource = ttk.Label(framemiddle, text="Choose a Camera as Output")
-labelsource.grid(row=2, column=1, padx=25, pady=20)
+labelsource.grid(row=2, column=1, padx=25, pady=18)
 labelsource.config()
 labelsource['font'] = font
 
@@ -135,7 +135,7 @@ button_source.grid(row=2, column=7, padx=40)
 framecenter = ttk.Frame(frameall)
 framecenter.pack()
 labelpath = ttk.Label(framecenter, text="Add Path:        ")
-labelpath.grid(row=3, column=1, pady=30)
+labelpath.grid(row=3, column=1, pady=15)
 labelpath['font'] = font
 cleartext = StringVar()
 cleartext.set("Select of Paste Path")
@@ -145,7 +145,7 @@ input_path.bind("<Button-1>", clearpath)
 
 button_browse = ttk.Button(framecenter, text="Browse", command=lambda: browsepath()).grid(row=3, column=5)
 button_source = ttk.Button(framecenter, text="Set Path", command=lambda: setpath())
-button_source.grid(row=3, column=6, pady=30)
+button_source.grid(row=3, column=6, pady=28)
 
 # create Frame to link to stream
 framebottom = ttk.Frame(frameall)
@@ -167,5 +167,9 @@ button_browse2 = ttk.Button(framebottom, text="Browse", command=lambda: browsest
 
 button_source = ttk.Button(framebottom, text="Set Stream", command=lambda: setstream())
 button_source.grid(row=4, column=6)
+
+credit = ttk.Label(root, text = "Created by Daniel Lechner and Gabriel Fütterer")
+credit.pack(anchor = "w")
+
 
 root.mainloop()
