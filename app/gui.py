@@ -26,7 +26,7 @@ root.geometry(f'{root_width}x{root_height}+{x}+{y}')
 root.get_themes()
 root.set_theme("equilux")
 # font used for text in gui
-font = font.Font(size=10, weight = "bold")
+font = font.Font(size=10, weight="bold")
 # create frame for image
 frametop = ttk.Frame(root)
 frametop.pack()
@@ -42,20 +42,24 @@ frameall.pack()
 framethres = ttk.Frame(frameall)
 framethres.pack()
 
+
 # start program with selected source annd threshol
 def setsource(args):
     os.system("python detect.py --source " + str(inputtext.get()) + " --weights best.pt --conf-thres " + setthreshold())
+
 
 # clear entry text on click
 def clearpath(event):
     event.widget.delete(0, 'end')
     return None
 
+
 # get slider value
 def setthreshold():
     sliderval = slider.get()
     formatted_sliderval = "{:.1f}".format(sliderval)
     return formatted_sliderval
+
 
 # get slider value to put into label
 def getvalue(val):
@@ -83,6 +87,7 @@ def setpath():
         os.system("python detect.py --source " + input_path.get() + " --weights best.pt --conf-thres " + setthreshold())
         input_path.delete(0, 'end')
 
+
 # function to select directory to use as stream
 def browsestream():
     # select directory
@@ -90,6 +95,7 @@ def browsestream():
     input_stream.delete(0, 'end')
     input_stream.insert(0, filename)
     return filename
+
 
 # set directory or file in entry as stream, returns error if entry is empty
 def setstream():
@@ -110,7 +116,7 @@ slider = ttk.Scale(framethres, from_=0, to=1, orient=HORIZONTAL, length=450, com
 slider.set(0.4)
 slider.grid(row=1, column=2, padx=15)
 threshinfo = ttk.Label(framethres)
-threshinfo.grid(row=1, column=3, padx = 5)
+threshinfo.grid(row=1, column=3, padx=5)
 threshinfo['font'] = font
 
 # create Frame to set source
@@ -123,13 +129,12 @@ labelsource['font'] = font
 
 inputtext = StringVar(value="0")
 # radiobuttons to make camera selection
-ttk.Radiobutton(framemiddle, text="Webcam", variable=inputtext, value=0).grid(row=2, column=3, padx = 5)
-ttk.Radiobutton(framemiddle, text="Camera 1", variable=inputtext, value=1).grid(row=2, column=4, padx = 5)
-ttk.Radiobutton(framemiddle, text="Camera 2", variable=inputtext, value=2).grid(row=2, column=5, padx = 5)
+ttk.Radiobutton(framemiddle, text="Webcam", variable=inputtext, value=0).grid(row=2, column=3, padx=5)
+ttk.Radiobutton(framemiddle, text="Camera 1", variable=inputtext, value=1).grid(row=2, column=4, padx=5)
+ttk.Radiobutton(framemiddle, text="Camera 2", variable=inputtext, value=2).grid(row=2, column=5, padx=5)
 
 button_source = ttk.Button(framemiddle, text="Set Source", command=lambda: setsource(inputtext.get()))
 button_source.grid(row=2, column=7, padx=40)
-
 
 # create Frame to set path to directory or file
 framecenter = ttk.Frame(frameall)
@@ -145,14 +150,14 @@ input_path.bind("<Button-1>", clearpath)
 
 button_browse = ttk.Button(framecenter, text="Browse", command=lambda: browsepath()).grid(row=3, column=5)
 button_source = ttk.Button(framecenter, text="Set Path", command=lambda: setpath())
-button_source.grid(row=3, column=6, pady=28)
+button_source.grid(row=3, column=6, pady=17)
 
 # create Frame to link to stream
 framebottom = ttk.Frame(frameall)
 framebottom.pack()
 
 labelstream = ttk.Label(framebottom, text="Add Stream:    ")
-labelstream.grid(row=4, column=1)
+labelstream.grid(row=4, column=1,pady = 17)
 labelstream['font'] = font
 
 cleartext2 = StringVar()
@@ -164,12 +169,10 @@ input_stream.bind("<Button-1>", clearpath)
 input_stream.bind("<Button-2>", clearpath)
 button_browse2 = ttk.Button(framebottom, text="Browse", command=lambda: browsestream()).grid(row=4, column=5)
 
-
 button_source = ttk.Button(framebottom, text="Set Stream", command=lambda: setstream())
 button_source.grid(row=4, column=6)
 
-credit = ttk.Label(root, text = "Created by Daniel Lechner and Gabriel Fütterer")
-credit.pack(anchor = "w")
-
+credit = ttk.Label(root, text="Created by Daniel Lechner and Gabriel Fütterer")
+credit.pack(anchor="w")
 
 root.mainloop()
