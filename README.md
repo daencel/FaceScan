@@ -81,7 +81,7 @@ __If you are using Windows, then go into your [Anaconda](https://docs.conda.io/p
 $ conda install pytorch torchvision cpuonly -c pytorch-nightly -c defaults -c conda-forge
 ```
 
-Intstall all dependencies from [requirements.txt](https://github.com/DanielLechner/FaceScan/blob/main/app/requirements.txt). We reccomend using Python 3.8.5.
+Install all dependencies from [requirements.txt](https://github.com/DanielLechner/FaceScan/blob/main/app/requirements.txt). We reccomend using Python 3.8.5.
 ```bash
 $ pip install -r requirements.txt
 ```
