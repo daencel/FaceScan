@@ -6,6 +6,7 @@ import tkinter as tk
 import tkinter.ttk as ttk
 from ttkthemes import themed_tk as tk
 import tkinter.font as font
+import webbrowser
 
 # create surface
 from PIL import ImageTk
@@ -34,7 +35,7 @@ frametop.pack()
 # create label on top of frame with logo
 img = PhotoImage(file="pictures/logo1.png")
 labelbg = ttk.Label(frametop, image=img)
-labelbg.pack(pady=15)
+labelbg.pack(pady=10)
 
 frameall = ttk.Frame(root)
 frameall.pack()
@@ -108,9 +109,12 @@ def setstream():
             "python detect.py --source " + input_stream.get() + " --weights best.pt --conf-thres " + setthreshold())
         input_stream.delete(0, 'end')
 
+def gotodashboard():
+    webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+
 
 label_thre = ttk.Label(framethres, text="Set Threshold: ")
-label_thre.grid(row=1, column=1, padx=10, pady=20)
+label_thre.grid(row=1, column=1, padx=10, pady=10)
 label_thre['font'] = font
 slider = ttk.Scale(framethres, from_=0, to=1, orient=HORIZONTAL, length=450, command=getvalue)
 slider.set(0.4)
@@ -122,7 +126,7 @@ threshinfo['font'] = font
 # create Frame to set source
 framemiddle = ttk.Frame(frameall)
 framemiddle.pack()
-labelsource = ttk.Label(framemiddle, text="Choose a Camera as Output")
+labelsource = ttk.Label(framemiddle, text="      Choose a Camera as Output")
 labelsource.grid(row=2, column=1, padx=25, pady=18)
 labelsource.config()
 labelsource['font'] = font
@@ -139,8 +143,8 @@ button_source.grid(row=2, column=7, padx=40)
 # create Frame to set path to directory or file
 framecenter = ttk.Frame(frameall)
 framecenter.pack()
-labelpath = ttk.Label(framecenter, text="Add Path:        ")
-labelpath.grid(row=3, column=1, pady=15)
+labelpath = ttk.Label(framecenter, text="Add Path:       ")
+labelpath.grid(row=3, column=1, pady=10)
 labelpath['font'] = font
 cleartext = StringVar()
 cleartext.set("Select of Paste Path")
@@ -150,20 +154,20 @@ input_path.bind("<Button-1>", clearpath)
 
 button_browse = ttk.Button(framecenter, text="Browse", command=lambda: browsepath()).grid(row=3, column=5)
 button_source = ttk.Button(framecenter, text="Set Path", command=lambda: setpath())
-button_source.grid(row=3, column=6, pady=17)
+button_source.grid(row=3, column=6, pady=12)
 
 # create Frame to link to stream
 framebottom = ttk.Frame(frameall)
 framebottom.pack()
 
 labelstream = ttk.Label(framebottom, text="Add Stream:    ")
-labelstream.grid(row=4, column=1,pady = 17)
+labelstream.grid(row=4, column=2,pady = 12)
 labelstream['font'] = font
 
 cleartext2 = StringVar()
 cleartext2.set("Select of Paste Stream")
 input_stream = ttk.Entry(framebottom, width=45, text=cleartext2)
-input_stream.grid(row=4, column=2)
+input_stream.grid(row=4, column=4)
 
 input_stream.bind("<Button-1>", clearpath)
 input_stream.bind("<Button-2>", clearpath)
@@ -172,7 +176,10 @@ button_browse2 = ttk.Button(framebottom, text="Browse", command=lambda: browsest
 button_source = ttk.Button(framebottom, text="Set Stream", command=lambda: setstream())
 button_source.grid(row=4, column=6)
 
+dashboard = ttk.Button(framebottom,text="View Dashboard", command=lambda: gotodashboard())
+dashboard.grid(row=5, columnspan=3)
+
 credit = ttk.Label(root, text="Created by Daniel Lechner and Gabriel Fütterer")
-credit.pack(anchor="w")
+credit.pack()
 
 root.mainloop()
