@@ -13,7 +13,12 @@ from PIL import ImageTk
 
 root = tk.ThemedTk()
 root.title('FaceScan')
-root.iconbitmap("pictures/hnet.com-image.ico")
+
+p1 = PhotoImage(file = 'pictures/icon.png')
+ 
+# Setting icon of master window
+root.iconphoto(False, p1)
+
 root.configure(background='#464646')
 root.resizable(False, False)
 # put root in the middle of the screen
@@ -147,7 +152,7 @@ labelpath = ttk.Label(framecenter, text="Add Path:       ")
 labelpath.grid(row=3, column=1, pady=10)
 labelpath['font'] = font
 cleartext = StringVar()
-cleartext.set("Select of Paste Path")
+cleartext.set("select or paste path")
 input_path = ttk.Entry(framecenter, width=45, text=cleartext)
 input_path.grid(row=3, column=2)
 input_path.bind("<Button-1>", clearpath)
@@ -165,7 +170,7 @@ labelstream.grid(row=4, column=2,pady = 12)
 labelstream['font'] = font
 
 cleartext2 = StringVar()
-cleartext2.set("Select of Paste Stream")
+cleartext2.set("select or paste stream")
 input_stream = ttk.Entry(framebottom, width=45, text=cleartext2)
 input_stream.grid(row=4, column=4)
 
