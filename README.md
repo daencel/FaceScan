@@ -131,7 +131,7 @@ Our weights file has a high precision as you can see in this graph, which repres
 
 ## 👨🏾‍💻👨🏻‍💻 Code Contributors
 
-![DanielLechner's GitHub stats](https://github-readme-stats.vercel.app/api?username=DanielLechner&show_icons=true&theme=radical) ![gabcode1712's GitHub stats](https://github-readme-stats.vercel.app/api?username=gabcode1712&show_icons=true&theme=radical)
+![DanielLechner's GitHub stats](https://github-readme-stats.vercel.app/api?username=daencel&show_icons=true&theme=radical) ![gabcode1712's GitHub stats](https://github-readme-stats.vercel.app/api?username=gabcode1712&show_icons=true&theme=radical)
 
 
 
